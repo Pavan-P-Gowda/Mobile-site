@@ -5,14 +5,56 @@
 }
 body{
     .container{
-        max-width: 480px;
+        max-width: 430px;
         min-height: 100vh;
         margin: auto;
         border: 3px solid rgb(82, 78, 78);
-        header{
-            
+        header#site-shop{
+            nav.fixed-top{
+                width: 430px;
+                margin: auto;
+                height: 60px;
                 
+            }
+        }
+        main{
+            margin-top: 57px;
+            section.video-ad{
+                position: relative;
+                video{
+                    /* margin-top: 57px; */
+                    width: 100%;
+                    height: auto;
+                    object-fit: cover;
                 }
-            
+                h2{
+                    position: absolute;
+                    z-index: 10;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    width: auto;
+                    text-wrap: nowrap;
+                    color: azure;
+                    text-shadow: 2px 2px black;
+                    font-size: 1.5rem;
+                }
+            }
+            section#slides{
+                /* background-color: black; */
+                .carousel{
+                    height:300px;
+                    .carousel-inner{
+                        height: 100%;
+                        .carousel-item{
+                            height: 100%;
+                            img{
+                                object-fit: cover;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
+}
